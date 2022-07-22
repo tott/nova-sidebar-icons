@@ -4,6 +4,7 @@ namespace Anaseqal\NovaSidebarIcons;
 
 use Laravel\Nova\Nova;
 use Laravel\Nova\Tool;
+use Illuminate\Http\Request;
 
 class NovaSidebarIcons extends Tool
 {
@@ -17,4 +18,7 @@ class NovaSidebarIcons extends Tool
         Nova::style('nova-sidebar-icons', __DIR__.'/../dist/css/tool.css');
     }
 
+    public function menu(Request $request)
+    {
+    }
 }
